@@ -24,16 +24,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="productlist.html">Product</a>
+              <a class="nav-link" href="#">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Quality</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Cs Contact.html">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav navbar-right">
@@ -44,57 +44,12 @@
               <a class="nav-link">or</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold" data-target="#loginmodal" data-toggle="modal">Login</a>
+              <a href="#" class="nav-link font-weight-bold">Login</a>
             </li> 
           </ul>  
         </div>
       </nav>
     </header>
-    <div class="modal" id="loginmodal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-tittle"> Login </h4>
-            <button class="close" data-dismiss="modal" >&times;</button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="TypeEmail"> Email </label>
-                <input class="form-control" placeholder="Login Email" type="text">
-              </div>
-              <div class="form-group">
-                <label for="TypePassword"> Password </label>
-                <input class="form-control" placeholder="Login Password" type="Password">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <div class="txt1 text-center">
-            <span>
-              Or Sign In Using
-            </span>
-          </div>
-
-             <div class="flex-c-m">
-            <a href="#" class="login100-social-item bg1">
-              <i class="fa fa-facebook"></i>
-            </a>
-
-            <a href="#" class="login100-social-item bg2">
-              <i class="fa fa-twitter"></i>
-            </a>
-
-            <a href="#" class="login100-social-item bg3">
-              <i class="fa fa-google"></i>
-            </a>
-          </div>
-            <button class="btn btn-primary"> Login </button>
-            <button class="btn btn-primary" data-dissmiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 <div class="container">
   <div class="row">
@@ -134,6 +89,25 @@
     Alfamart
   </label>
 </div>
+
+
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
    
         </div>
 
@@ -159,22 +133,22 @@
 
 
 
-      <footer id="myFooter" class="container-fluid p-2">
-       <div class="container-fluid p-2">
+      <footer class="container">
+       <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <h5>Information</h5>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">Sign up</a></li>
-                        <li><a href="#" data-target="#loginmodal" data-toggle="modal">Log in</a></li>
+                        <li><a href="#">Downloads</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Customer Service</h5>
                     <ul>
                         <li><a href="#">Company Information</a></li>
-                        <li><a href="Cs Contact.html">Contact us</a></li>
+                        <li><a href="#">Contact us</a></li>
                         <li><a href="#">Reviews</a></li>
                     </ul>
                 </div>
@@ -194,17 +168,16 @@
         </div>
         <div class="second-bar">
            <div class="container">
-                <h2 class="logo"><a href="#"> Gro-Fresh </a></h2>
+                <h2 class="logo"><a href="#"> LOGO </a></h2>
                 <div class="social-icons">
                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                    <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2018 Gro-Fresh, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
                 </div>
             </div>
         </div>
-        
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018 Gro-Fresh, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </main>
 
