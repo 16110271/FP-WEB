@@ -9146,3 +9146,17 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
   background-color: #333333;
 }
+.gambar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 220px;
+  margin-left: 220px;
+  padding-top: 20px;
+  margin-left: 225px;
+  padding-top: 35px;
+}
+.profile {
+  margin-left: 600px;
+  padding-top: 95px;
+  position: absolute;
+}
