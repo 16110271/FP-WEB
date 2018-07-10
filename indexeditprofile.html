@@ -13,6 +13,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/carousel.css" rel="stylesheet">
     <script src="assets/js/bootsrap.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/util.css">
 
@@ -52,15 +53,42 @@
         </div>
       </nav>
     </header>
-      <ul class="profile">
-      <button type="button" class="btn btn-success" style="color: white" > <a href="indexeditprofile.html" style="color: white; text-decoration: none;"  >Edit Profile</a></button>
-      <button type="button" class="btn btn-primary"> <a href="history payment.html" style="color: white; text-decoration: none;">History</a></button>
+    <ul class="profile">
+      <a style="font-size: xx-large; font-weight: bold;">Edit Profile</a>
       <br>
       <br>
+      <div class="ubah">
+      <input type="text" onfocus="this.value=''" id="email" value="" >
+      <input type="text" onfocus="this.value=''" id="nomorhp" value="" style="margin-top: 25px">
+      <input type="text" onfocus="this.value="'' id ="alamat" value="" style="margin-top: 25px">
+      <script>
+    function myFunction() {
+    var x = document.getElementById("email").value;
+    document.getElementById("change1").innerHTML = x;
+
+    var lblemail = document.getElementById("hilang1");
+    lblemail.parentNode.removeChild(lblemail);
+
+    var y = document.getElementById("nomorhp").value;
+    document.getElementById("change2").innerHTML = y;
+
+    var lbltelepon = document.getElementById("hilang2");
+    lbltelepon.parentNode.removeChild(lbltelepon);
+    var z = document.getElementById("alamat").value;
+
+    document.getElementById("change3").innerHTML = z;
+    var lblalamat = document.getElementById("hilang3");
+    lblalamat.parentNode.removeChild(lblalamat);
+    }
+    </script>
+      </div>
+      <div class="label">
       <a> <img src="user2.png"> Ray Reysandi </a><br><br> 
-      <a> <img src="email.png"> Rayreysandi@gmail.com </a><br><br>
-      <a> <img src="phone.png"> 08780217001 </a><br><br>
-      <a> <img src="house.png"> Minomartani </a><br>
+      <img src="email.png"><a id="hilang1"> ray@gmail.com</a> <a id="change1"></a><br><br>
+      <img src="phone.png"><a id="hilang2"> 087802170071</a> <a id="change2"></a><br><br>
+      <img src="house.png"><a id="hilang3"> Minomartani</a> <a id="change3"></a><br>
+      <button type="button" class="btn btn-warning" onclick="myFunction()" style="margin-top: 20px;"> Ubah</button>
+      </div>
     </ul>
     <div class="gambar">
         <img src="user.png">
